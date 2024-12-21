@@ -14,7 +14,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3001") // allow React app to access API
+                .allowedOrigins("https://musical-clafoutis-fa362b.netlify.app") // allow React app to access API
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "PATCH")
                 .allowedHeaders("*")
                 .allowCredentials(true); // allow cookies/session headers to be sent
